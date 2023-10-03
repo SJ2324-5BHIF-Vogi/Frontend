@@ -1,2 +1,2 @@
 # Frontend
-The frontend of our lovely little Vogi
+The frontend of our lovely little Vogi!
