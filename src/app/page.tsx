@@ -1,7 +1,8 @@
 import { ReactElement } from 'react'
+import { redirect } from 'next/navigation'
 
-const Home = (): ReactElement => {
-  return <div className='text-green-300'>Tailwind Test</div>
+const Index = (): ReactElement => {
+  return redirect('/home')
 }
 
-export default Home
+export default Index
