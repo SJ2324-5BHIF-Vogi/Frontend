@@ -1,9 +1,7 @@
-import { Inter } from 'next/font/google'
+import { Sidebar } from '@/views/Sidebar'
+import { SearchBar } from '@/components/global/SearchBar'
 import { Metadata } from 'next'
-import './globals.css'
 import { ReactElement, ReactNode } from 'react'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -11,11 +9,15 @@ export const metadata: Metadata = {
 }
 const RootLayout = ({ children }: { children: ReactNode }): ReactElement => {
   return (
-    <html lang='en'>
-      <body className={inter.className + ' flex h-screen w-screen'}>
+    <>
+      <Sidebar />
+      <main className='bg-red-500 border-r-4 border-black grow w-1/2'>
         {children}
-      </body>
-    </html>
+      </main>
+      <aside className='grow w-1/4 mx-2'>
+        <SearchBar />
+      </aside>
+    </>
   )
 }
 
