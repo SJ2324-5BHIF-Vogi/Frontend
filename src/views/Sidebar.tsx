@@ -10,18 +10,20 @@ import {
 
 export const Sidebar: FC = () => {
   return (
-    <nav className='flex flex-col px-1 overflow-hidden border-r-4 bg-zinc-800 border-zinc-300 grow w-1/5 text-white'>
+    <nav className='flex flex-col px-1 overflow-hidden border-r-4 bg-zinc-800 border-zinc-500 grow w-1/5 text-white'>
       <div className='my-16 mx-auto'>
         <Image
           alt='Vogi Logo'
           className='rounded-full'
           height={142}
-          src='/vogi_logo.png'
+          src='/vogi_logo_dark.png'
           width={142}
         />
-        <p className='text-center mt-4 text-4xl text-emerald-400 font-righteous'>Vogi</p>
+        <p className='text-center mt-4 text-4xl text-emerald-400 font-righteous'>
+          Vogi
+        </p>
       </div>
-      <div className='flex-col space-y-8 mx-auto grow w-2/3 font-righteous'>
+      <div className='flex-col space-y-8 mx-auto grow w-2/3 font-righteous mt-8'>
         <NavbarButton Icon={RiHome2Line}>Home</NavbarButton>
         <NavbarButton Icon={RiCompassLine}>Explore</NavbarButton>
         <NavbarButton Icon={RiUserLine}>Profile</NavbarButton>
