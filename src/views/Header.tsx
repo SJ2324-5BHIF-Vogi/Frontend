@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const Header: FC = () => {
   return (
-    <header className='flex border-b-4 bg-zinc-800 border-zinc-300 h-1/4 px-16 text-white'>
+    <header className='flex border-b-4 bg-zinc-800 border-zinc-300 h-1/4 px-16 text-white font-manrope'>
       <div className='flex items-center grow w-1/2'>
         <Image
           alt='Profile Picture'

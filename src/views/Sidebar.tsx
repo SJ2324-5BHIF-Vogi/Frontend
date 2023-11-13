@@ -19,9 +19,9 @@ export const Sidebar: FC = () => {
           src='/vogi_logo.png'
           width={142}
         />
-        <p className='text-center my-4 text-3xl text-emerald-400'>Vogi</p>
+        <p className='text-center mt-4 text-4xl text-emerald-400 font-righteous'>Vogi</p>
       </div>
-      <div className='flex-col space-y-8 mx-auto grow w-2/3'>
+      <div className='flex-col space-y-8 mx-auto grow w-2/3 font-righteous'>
         <NavbarButton Icon={RiHome2Line}>Home</NavbarButton>
         <NavbarButton Icon={RiCompassLine}>Explore</NavbarButton>
         <NavbarButton Icon={RiUserLine}>Profile</NavbarButton>
