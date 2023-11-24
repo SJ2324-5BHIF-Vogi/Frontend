@@ -12,7 +12,7 @@ const config: Config = {
     },
     fontFamily: {
       righteous: ['Righteous', 'sans-serif'],
-      manrope: ['Manrope', 'sans-serif'],
+      manrope: ['Manrope', 'sans-serif']
     }
   },
   plugins: []
