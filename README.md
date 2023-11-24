@@ -1,12 +1,12 @@
-# Frontend
+# Vogi-Frontend
 The frontend of our lovely little Vogi!
 
-# Teammitglieder
-|Name       | Aufgaben |
-|-----      |-------- |
-|Bauer Manuel| ... |
-|Sam Elena| ...|
-|Montemayor Gabriel-Angelo| ...|
-|Öksüm Fikri|...|
+# Team members
+|Name                       | Tasks |
+|-----                      | -------- |
+|Manuel Bauer               | UI-Logic, Layout, Design, API |
+|Elena Sam                  | Layout, Profile-Page, Design, Neon-Mode, API |
+|Gabriel-Angelo Montemayor  | Login/Register, Payment |
+|Fikri Öksüm                | Login/Register, Payment |
 
-![image](https://github.com/SJ2324-5BHIF-Vogi/Frontend/assets/61699155/688b0d85-21d2-4179-9d64-5f57758ae0aa)
+![Vogi-Logo](public/vogi_logo.png "Vogi-Logo")
