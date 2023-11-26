@@ -1,0 +1,112 @@
+{
+  "uuid": "3bde4507-6209-450a-b52b-ae3f3a60f795",
+  "lastMigration": 29,
+  "name": "ContentService",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "b339ce18-e34e-450b-9026-0b100505b35a",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "posts",
+      "responses": [
+        {
+          "uuid": "d0026799-0b7b-4597-bbde-faf552d337d8",
+          "body": "[\n  {\n    \"uuid\": \"5e62cde8-dd59-4e57-94dd-445649bf1c9e\"\n    \"username\": \"github\",\n    \"displayName\": \"GitHub\",\n    \"date\": \"2023-11-24T20:17\",\n    \"content\": \"#Markdown  \\n- here\\n - is\\n - some\\n - markdown\",\n    \"likes\": 3.470,\n    \"shares\": 500,\n    \"comments\": 653\n  },\n  {\n    \"uuid\": \"06250946-f8d8-4765-848c-9a7661bcf423 \"\n    \"username\": \"grubhub\",\n    \"displayName\": \"GrubHub\",\n    \"date\": \"2023-11-24T20:18\",\n    \"content\": \"#Cancel GitHub!  \\n- here\\n - is\\n - some\\n - markdown\",\n    \"likes\": 3.470,\n    \"shares\": 500,\n    \"comments\": 653\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "0a51d271-95de-4d5f-9aea-69f3be7be04f",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "posts/06250946-f8d8-4765-848c-9a7661bcf423 ",
+      "responses": [
+        {
+          "uuid": "052ef9e3-2838-40b8-90f2-0d5d61b8ac8d",
+          "body": "{\n    \"uuid\": \"06250946-f8d8-4765-848c-9a7661bcf423 \"\n    \"username\": \"grubhub\",\n    \"displayName\": \"GrubHub\",\n    \"date\": \"2023-11-24T20:18\",\n    \"content\": \"#Cancel GitHub!  \\n- here\\n - is\\n - some\\n - markdown\",\n    \"likes\": 3.470,\n    \"shares\": 500,\n    \"comments\": 653\n  }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "b339ce18-e34e-450b-9026-0b100505b35a"
+    },
+    {
+      "type": "route",
+      "uuid": "0a51d271-95de-4d5f-9aea-69f3be7be04f"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

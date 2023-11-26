@@ -1,0 +1,112 @@
+{
+  "uuid": "59b86046-7696-40c6-a09f-9e1e34e0198b",
+  "lastMigration": 29,
+  "name": "UserService",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "748a09fe-17c0-4b4f-84b6-ddc793ef0910",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users",
+      "responses": [
+        {
+          "uuid": "876f0041-8115-4ab2-aeb6-6161befc789f",
+          "body": "[\n  {\n  \"username\": \"github\",\n  \"displayName\": \"GitHub\",\n  \"bio\": \"The AI-powered developer platform to build, scale, and deliver secure software.\",\n  \"pic\": \"https://twitter.com/github/photo\"\n  },\n  {\n  \"username\": \"grubhub\",\n  \"displayName\": \"GrubHub\",\n  \"bio\": \"Go for takeout. Go for Grubhub. 🏠🚗🍕 Need help with an order?\",\n  \"pic\": \"https://twitter.com/Grubhub/photo\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "b22632d3-c14c-4b1e-9f26-c79aaf2fc872",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "users/github",
+      "responses": [
+        {
+          "uuid": "c960b535-e450-4af2-baec-8ea353d323a1",
+          "body": "{\n  \"username\": \"GitHub\",\n  \"displayName\": \"github\",\n  \"bio\": \"The AI-powered developer platform to build, scale, and deliver secure software.\",\n  \"pic\": \"https://twitter.com/github/photo\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "748a09fe-17c0-4b4f-84b6-ddc793ef0910"
+    },
+    {
+      "type": "route",
+      "uuid": "b22632d3-c14c-4b1e-9f26-c79aaf2fc872"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
