@@ -1,10 +1,19 @@
+import { Post } from '@/views/Post'
 import React, { ReactElement } from 'react'
 
 const Home = (): ReactElement => {
   return (
-    <div className='flex flex-col m-[15px] space-y-[5px] text-white'>
-      Content
-    </div>
+    <main className='flex flex-col p-4 space-y-[5px] text-white'>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+    </main>
   )
 }
 

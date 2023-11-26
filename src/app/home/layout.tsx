@@ -13,7 +13,7 @@ const RootLayout = ({ children }: { children: ReactNode }): ReactElement => {
     <>
       <Sidebar />
       <div className='flex-col bg-zinc-900 grow w-3/5'>
-        <Header />
+        <Header username='Bob' />
         {children}
       </div>
       <aside className='bg-zinc-800 border-zinc-500 border-l-4 grow w-1/5'>

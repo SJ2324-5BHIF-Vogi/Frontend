@@ -7,7 +7,7 @@ interface Props {
 
 export const Header: FC<Props> = ({ username }) => {
   return (
-    <header className='flex border-b-4 bg-zinc-800 border-zinc-500 h-1/4 px-16 text-white font-manrope'>
+    <header className='flex border-b-4 bg-zinc-800 border-zinc-500 h-[25vh] px-16 text-white font-manrope'>
       <div className='flex items-center grow w-1/2'>
         <Image
           alt='Profile Picture'
