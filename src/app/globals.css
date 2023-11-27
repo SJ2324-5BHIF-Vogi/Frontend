@@ -4,3 +4,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark .border-gradient-r {
+    border-right: 4px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      #00F0FF, 
+      #8A00FF,
+      #FF006B
+    ) 1 100%;
+}
+
+.dark .border-gradient-l {
+    border-left: 4px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      #00F0FF, 
+      #8A00FF,
+      #FF006B
+    ) 1 100%;
+}
+
+.dark .border-gradient-b {
+    border-bottom: 4px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      #00F0FF, 
+      #8A00FF,
+      #FF006B
+    ) 1 100%;
+}

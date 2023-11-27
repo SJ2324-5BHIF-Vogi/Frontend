@@ -16,7 +16,7 @@ const RootLayout = ({ children }: { children: ReactNode }): ReactElement => {
         <Header username='Bob' />
         {children}
       </div>
-      <aside className='fixed right-[0px] h-screen bg-zinc-800 border-zinc-500 border-l-4 grow w-1/5 dark:bg-midnight-700'>
+      <aside className='border-gradient-l fixed right-[0px] h-screen bg-zinc-800 border-zinc-500 border-l-4 grow w-1/5 dark:bg-midnight-700'>
         <SearchBar />
       </aside>
     </>

@@ -12,7 +12,12 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: ReactNode }): ReactElement => {
   return (
     <html className='dark min-h-[100%] overflow-x-hidden' lang='en'>
-      <body className={inter.className + ' flex h-full min-h-[100vh]'}>
+      <body
+        className={
+          inter.className +
+          ' flex h-full min-h-[100vh] dark:bg-gradient-to-b from-toothpaste-500 via-eggplant-500 to-dragonfruit-500'
+        }
+      >
         {children}
       </body>
     </html>
