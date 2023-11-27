@@ -19,7 +19,7 @@ export const Sidebar: FC = () => {
           src='/vogi_logo_dark.png'
           width={142}
         />
-        <p className='text-center mt-4 text-4xl text-emerald-400 font-righteous'>
+        <p className='text-center mt-4 text-4xl text-emerald-400 logo-text font-righteous'>
           Vogi
         </p>
       </section>

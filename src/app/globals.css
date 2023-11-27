@@ -29,14 +29,14 @@
     ) 1 100%;
 }
 
-.dark .border-gradient-b {
-    border-bottom: 4px;
-    border-style: solid;
-    border-image: 
-    linear-gradient(
-      to bottom, 
-      #00F0FF, 
-      #8A00FF,
-      #FF006B
-    ) 1 100%;
+.dark .hover .navbar-button-text {
+    background: -webkit-linear-gradient(#6153FF, #FB3CFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark .logo-text {
+    background: -webkit-linear-gradient(#309CFF, #BD00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
