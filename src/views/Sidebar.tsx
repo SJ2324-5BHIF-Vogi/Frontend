@@ -10,7 +10,7 @@ import {
 
 export const Sidebar: FC = () => {
   return (
-    <nav className='flex flex-col fixed h-screen px-1 overflow-hidden border-r-4 bg-zinc-800 border-zinc-500 grow w-1/5 text-white'>
+    <nav className='flex flex-col fixed h-screen px-1 overflow-hidden border-r-4 bg-zinc-800 border-zinc-500 grow w-1/5 text-white dark:bg-midnight-700'>
       <section className='my-16 mx-auto'>
         <Image
           alt='Vogi Logo'
