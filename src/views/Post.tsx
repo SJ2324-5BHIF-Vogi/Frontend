@@ -24,9 +24,14 @@ export const Post: FC = () => {
         />
         <div className='flex flex-col justify-center'>
           <span className='text-sm'>
-            Vogi Offical <span className='text-zinc-400'>vor 2 Stunden</span>
+            Vogi Offical{' '}
+            <span className='text-zinc-400 dark:text-gray-500'>
+              vor 2 Stunden
+            </span>
           </span>
-          <span className='text-xs text-zinc-400'>@vogi</span>
+          <span className='text-xs text-zinc-400 dark:text-gray-400'>
+            @vogi
+          </span>
         </div>
       </aside>
       <Markdown className='my-5'>{markdown}</Markdown>

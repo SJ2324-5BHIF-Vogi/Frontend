@@ -11,6 +11,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
       colors: {
+        'lilac-300': '#af8dc9',
         'lilac-500': '#A875CF',
         'lilac-700': '#4e3363',
         'toothpaste-500': '#00F0FF',
