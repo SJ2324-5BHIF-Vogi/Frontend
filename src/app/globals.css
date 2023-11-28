@@ -29,10 +29,15 @@
     ) 1 100%;
 }
 
-.dark .hover .navbar-button-text {
-    background: -webkit-linear-gradient(#6153FF, #FB3CFF);
+.dark .navbar-button-text:hover {
+    background: -webkit-linear-gradient(#4265ff, #FB3CFF);
+    color: inherit;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.dark .navbar-button-text Icon {
+    color: inherit;
 }
 
 .dark .logo-text {
