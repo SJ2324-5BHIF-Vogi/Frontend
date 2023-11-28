@@ -12,6 +12,7 @@ const config: Config = {
       },
       colors: {
         'lilac-500': '#A875CF',
+        'lilac-700': '#4e3363',
         'toothpaste-500': '#00F0FF',
         'eggplant-500': '#8A00FF',
         'dragonfruit-500': '#FF006B',
