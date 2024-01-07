@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 interface Props {
   children: ReactNode
   params: Record<string, any>
-  searchParams: Record<string, any>
+  //searchParams: Record<string, any>
 }
 
 const RootLayout: FC<Props> = ({ children, params }) => {
