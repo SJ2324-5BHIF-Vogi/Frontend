@@ -1,0 +1,7 @@
+version: "2.10.2"
+services:
+  vogi-frontend:
+    build:
+      context: .
+    ports:
+      - "3000:3000"
