@@ -4,3 +4,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark .border-gradient-r {
+    border-right: 4px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      #00F0FF, 
+      #8A00FF,
+      #FF006B
+    ) 1 100%;
+}
+
+.dark .border-gradient-l {
+    border-left: 4px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      #00F0FF, 
+      #8A00FF,
+      #FF006B
+    ) 1 100%;
+}
+
+.dark .navbar-button-text:hover {
+    background: -webkit-linear-gradient(#4265ff, #FB3CFF);
+    color: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark .navbar-button-text Icon {
+    color: inherit;
+}
+
+.dark .logo-text {
+    background: -webkit-linear-gradient(#309CFF, #BD00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark .logo {
+    background-size: contain;
+    background-image: url("/vogi_logo_neon.png");
+}
+
+.logo {
+    background-image: url("/vogi_logo_dark.png");
+}

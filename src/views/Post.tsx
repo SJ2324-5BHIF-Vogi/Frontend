@@ -13,7 +13,7 @@ export const Post: FC = () => {
     '# Dies ist ein Test  \n ## Super Test  \n *hallo*  \n **HALLO**'
 
   return (
-    <article className='p-2 pb-3 border-b-2  border-neutral-700 font-manrope'>
+    <article className='p-2 pt-5 pb-4 border-b-2  border-neutral-700 dark:border-midnight-600 font-manrope'>
       <aside className='flex space-x-3'>
         <Image
           alt='[CHANGE TO USERNAME] profile picture'
@@ -24,9 +24,14 @@ export const Post: FC = () => {
         />
         <div className='flex flex-col justify-center'>
           <span className='text-sm'>
-            Vogi Offical <span className='text-zinc-400'>vor 2 Stunden</span>
+            Vogi Offical{' '}
+            <span className='text-zinc-400 dark:text-gray-500'>
+              vor 2 Stunden
+            </span>
           </span>
-          <span className='text-xs text-zinc-400'>@vogi</span>
+          <span className='text-sm text-zinc-400 dark:text-gray-500'>
+            @vogi
+          </span>
         </div>
       </aside>
       <Markdown className='my-5'>{markdown}</Markdown>
