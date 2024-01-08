@@ -1,4 +1,5 @@
 import { NavbarButton } from '@/components/Sidebar/NavbarButton'
+import Link from 'next/link'
 import React, { FC } from 'react'
 import {
   RiCompassLine,
@@ -17,10 +18,26 @@ export const Sidebar: FC = () => {
         </p>
       </section>
       <section className='flex-col space-y-8 mx-auto grow w-2/3 font-righteous mt-8'>
-        <NavbarButton Icon={RiHome2Line}>Home</NavbarButton>
-        <NavbarButton Icon={RiCompassLine}>Explore</NavbarButton>
-        <NavbarButton Icon={RiUserLine}>Profile</NavbarButton>
-        <NavbarButton Icon={RiVipDiamondLine}>Premium</NavbarButton>
+        <div>
+          <Link href='/home'>
+            <NavbarButton Icon={RiHome2Line}>Home</NavbarButton>
+          </Link>
+        </div>
+        <div>
+          <Link href='/explore'>
+            <NavbarButton Icon={RiCompassLine}>Explore</NavbarButton>
+          </Link>
+        </div>
+        <div>
+          <Link href='/profile'>
+            <NavbarButton Icon={RiUserLine}>Profile</NavbarButton>
+          </Link>
+        </div>
+        <div>
+          <Link href='/premium'>
+            <NavbarButton Icon={RiVipDiamondLine}>Premium</NavbarButton>
+          </Link>
+        </div>
       </section>
     </nav>
   )
