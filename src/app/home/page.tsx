@@ -1,7 +1,7 @@
 'use client'
 import { Post } from '@/views/Post'
 import axios from 'axios'
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useEffect, useState } from 'react'
 
 interface PostData {
   uuid: string
@@ -15,15 +15,21 @@ interface PostData {
 }
 
 const Home = (): ReactElement => {
-  const posts: PostData[] = []
+  const [posts, setPosts] = useState<PostData[]>([])
 
-  axios
-    .get('http://localhost:3002/posts')
-    .then((response) => {
-      posts.push(response.data)
-      console.log(posts)
-    })
-    .catch(() => {})
+  useEffect(() => {
+    const fetchData = async (): Promise<void> => {
+      try {
+        const response = await axios.get('http://localhost:3002/posts')
+        setPosts(response.data)
+      } catch (error) {
+        console.error('Error fetching data:', error)
+      }
+    }
+
+    // Call the async function
+    fetchData()
+  }, [])
 
   return (
     <main className='flex flex-col p-4 space-y-[5px] text-white'>
@@ -39,6 +45,17 @@ const Home = (): ReactElement => {
         />
       ))}
     </main>
+
+    /*<main className='flex flex-col p-4 space-y-[5px] text-white'>
+      <Post
+        comments='27'
+        content='# Hallo'
+        displayName='Freddy'
+        likes='7'
+        shares='8'
+        username='hallooo'
+      />
+    </main>*/
   )
 }
 
