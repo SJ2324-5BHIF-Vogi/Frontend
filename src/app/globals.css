@@ -52,5 +52,6 @@
 }
 
 .logo {
+    background-size: contain;
     background-image: url("/vogi_logo_dark.png");
 }
