@@ -1,6 +1,6 @@
 version: "2.10.2"
 services:
-  vogi-frontend:
+  next-app:
     build:
       context: .
     ports:

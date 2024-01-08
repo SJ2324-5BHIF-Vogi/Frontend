@@ -23,7 +23,7 @@ const RootLayout: FC<Props> = ({ children, params }) => {
         <Header username={params.username} />
         {children}
       </div>
-      <aside className='bg-zinc-800 border-zinc-500 border-l-4 grow w-1/5'>
+      <aside className='border-gradient-l fixed right-[0px] h-screen bg-zinc-800 border-zinc-500 border-l-4 grow w-1/5 dark:bg-midnight-700'>
         <SearchBar />
       </aside>
     </>
