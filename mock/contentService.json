@@ -1,6 +1,6 @@
 {
   "uuid": "3bde4507-6209-450a-b52b-ae3f3a60f795",
-  "lastMigration": 29,
+  "lastMigration": 32,
   "name": "ContentService",
   "endpointPrefix": "",
   "latency": 0,
@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "d0026799-0b7b-4597-bbde-faf552d337d8",
-          "body": "[\n  {\n    \"uuid\": \"5e62cde8-dd59-4e57-94dd-445649bf1c9e\"\n    \"username\": \"github\",\n    \"displayName\": \"GitHub\",\n    \"date\": \"2023-11-24T20:17\",\n    \"content\": \"#Markdown  \\n- here\\n - is\\n - some\\n - markdown\",\n    \"likes\": 3.470,\n    \"shares\": 500,\n    \"comments\": 653\n  },\n  {\n    \"uuid\": \"06250946-f8d8-4765-848c-9a7661bcf423 \"\n    \"username\": \"grubhub\",\n    \"displayName\": \"GrubHub\",\n    \"date\": \"2023-11-24T20:18\",\n    \"content\": \"#Cancel GitHub!  \\n- here\\n - is\\n - some\\n - markdown\",\n    \"likes\": 3.470,\n    \"shares\": 500,\n    \"comments\": 653\n  }\n]",
+          "body": "[\n  {\n    \"uuid\": \"5e62cde8-dd59-4e57-94dd-445649bf1c9e\",\n    \"username\": \"github\",\n    \"displayName\": \"GitHub\",\n    \"date\": \"2023-11-24T20:17\",\n    \"content\": \"#Markdown  \\n- here\\n - is\\n - some\\n - markdown\",\n    \"likes\": 3470,\n    \"shares\": 500,\n    \"comments\": 653\n  },\n  {\n    \"uuid\": \"06250946-f8d8-4765-848c-9a7661bcf423\",\n    \"username\": \"grubhub\",\n    \"displayName\": \"GrubHub\",\n    \"date\": \"2023-11-24T20:18\",\n    \"content\": \"#Cancel GitHub!  \\n- here\\n - is\\n - some\\n - markdown\",\n    \"likes\": 3470,\n    \"shares\": 500,\n    \"comments\": 653\n  }\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -31,10 +31,10 @@
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true,
-          "crudKey": "id"
+          "crudKey": "id",
+          "callbacks": []
         }
       ],
-      "enabled": true,
       "responseMode": null
     },
     {
@@ -60,10 +60,10 @@
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true,
-          "crudKey": "id"
+          "crudKey": "id",
+          "callbacks": []
         }
       ],
-      "enabled": true,
       "responseMode": null
     }
   ],
@@ -108,5 +108,6 @@
       "value": ""
     }
   ],
-  "data": []
+  "data": [],
+  "callbacks": []
 }

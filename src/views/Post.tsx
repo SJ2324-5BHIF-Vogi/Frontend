@@ -8,9 +8,27 @@ import {
   RiShareForwardLine
 } from 'react-icons/ri'
 
-export const Post: FC = () => {
-  const markdown =
-    '# Dies ist ein Test  \n ## Super Test  \n *hallo*  \n **HALLO**'
+interface Props {
+  //uuid: string
+  username: string
+  displayName: string
+  //date: Date
+  content: string
+  likes: string
+  shares: string
+  comments: string
+}
+
+export const Post: FC<Props> = ({
+  username,
+  displayName,
+  content,
+  likes,
+  shares,
+  comments
+}) => {
+  /*const markdown =
+    '# Dies ist ein Test  \n ## Super Test  \n *hallo*  \n **HALLO**'*/
 
   return (
     <article className='p-2 pt-5 pb-4 border-b-2  border-neutral-700 dark:border-midnight-600 font-manrope'>
@@ -24,21 +42,23 @@ export const Post: FC = () => {
         />
         <div className='flex flex-col justify-center'>
           <span className='text-sm'>
-            Vogi Offical{' '}
+            {displayName}{' '}
             <span className='text-zinc-400 dark:text-gray-500'>
               vor 2 Stunden
             </span>
           </span>
           <span className='text-sm text-zinc-400 dark:text-gray-500'>
-            @vogi
+            {username}
           </span>
         </div>
       </aside>
-      <Markdown className='my-5'>{markdown}</Markdown>
+      <Markdown className='my-5'>{content}</Markdown>
       <section className='flex justify-center space-x-5'>
-        <InteractionButton Icon={RiHeart3Line}>2.123</InteractionButton>
-        <InteractionButton Icon={RiShareForwardLine}>723</InteractionButton>
-        <InteractionButton Icon={RiMessage3Line}>52</InteractionButton>
+        <InteractionButton Icon={RiHeart3Line}>{likes}</InteractionButton>
+        <InteractionButton Icon={RiShareForwardLine}>
+          {shares}
+        </InteractionButton>
+        <InteractionButton Icon={RiMessage3Line}>{comments}</InteractionButton>
       </section>
     </article>
   )
