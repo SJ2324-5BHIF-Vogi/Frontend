@@ -29,12 +29,12 @@
     ) 1 100%;
 }
 
-.dark .navbar-button-text:hover {
+/*.dark .navbar-button-text:hover {
     background: -webkit-linear-gradient(#4265ff, #FB3CFF);
     color: inherit;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+}*/
 
 .dark .navbar-button-text Icon {
     color: inherit;

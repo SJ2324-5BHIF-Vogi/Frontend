@@ -4,6 +4,7 @@ import React, { FC } from 'react'
 import {
   RiCompassLine,
   RiHome2Line,
+  RiSettings4Line,
   RiUserLine,
   RiVipDiamondLine
 } from 'react-icons/ri'
@@ -17,7 +18,7 @@ export const Sidebar: FC = () => {
           Vogi
         </p>
       </section>
-      <section className='flex-col space-y-8 mx-auto grow w-2/3 font-righteous mt-8'>
+      <section className='flex-col space-y-4 mx-auto grow w-2/3 font-righteous mt-8'>
         <div>
           <Link href='/home'>
             <NavbarButton Icon={RiHome2Line}>Home</NavbarButton>
@@ -36,6 +37,11 @@ export const Sidebar: FC = () => {
         <div>
           <Link href='/premium'>
             <NavbarButton Icon={RiVipDiamondLine}>Premium</NavbarButton>
+          </Link>
+        </div>
+        <div>
+          <Link href='/settings'>
+            <NavbarButton Icon={RiSettings4Line}>Settings</NavbarButton>
           </Link>
         </div>
       </section>
