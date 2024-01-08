@@ -45,17 +45,6 @@ const Home = (): ReactElement => {
         />
       ))}
     </main>
-
-    /*<main className='flex flex-col p-4 space-y-[5px] text-white'>
-      <Post
-        comments='27'
-        content='# Hallo'
-        displayName='Freddy'
-        likes='7'
-        shares='8'
-        username='hallooo'
-      />
-    </main>*/
   )
 }
 
