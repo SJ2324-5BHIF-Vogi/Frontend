@@ -6,7 +6,7 @@ interface Props {
 
 export const NavbarButton: FC<Props> = ({ children, Icon }: Props) => {
   return (
-    <button className='flex items-center text-center rounded-full grow h-20 w-full text-white hover:text-emerald-400 hover:dark:bg-purple-800 hover:dark:text-white'>
+    <button className='flex items-center text-center rounded-full grow h-20 w-full text-white hover:bg-emerald-600 hover:dark:bg-gradient-to-b hover:dark:from-indigo-700 hover:dark:to-purple-700 hover:dark:text-white'>
       <Icon className='ml-8 mr-6 text-4xl' />
       <span className='text-2xl navbar-button-text'>{children}</span>
     </button>
