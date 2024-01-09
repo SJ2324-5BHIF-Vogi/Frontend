@@ -1,3 +1,4 @@
+'use client'
 import { Sidebar } from '@/views/Sidebar'
 import { SearchBar } from '@/components/global/SearchBar'
 import { Header } from '@/views/Header'
@@ -11,7 +12,9 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: ReactNode }): ReactElement => {
   return (
     <>
-      <Sidebar />
+      <div>
+        <Sidebar />
+      </div>
       <div className='flex-col bg-zinc-900 dark:bg-midnight-800 ml-auto mr-auto w-3/5'>
         <Header username='vogi' />
         {children}

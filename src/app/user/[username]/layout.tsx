@@ -19,7 +19,7 @@ const RootLayout: FC<Props> = ({ children, params }) => {
   return (
     <>
       <Sidebar />
-      <div className='flex-col bg-zinc-900 grow w-3/5'>
+      <div className='flex-col bg-zinc-900 dark:bg-midnight-800 ml-auto mr-auto w-3/5'>
         <Header username={params.username} />
         {children}
       </div>
