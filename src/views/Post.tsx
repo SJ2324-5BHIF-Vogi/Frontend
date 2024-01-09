@@ -9,10 +9,9 @@ import {
 } from 'react-icons/ri'
 
 interface Props {
-  //uuid: string
   username: string
   displayName: string
-  //date: Date
+  date: Date
   content: string
   likes: string
   shares: string
@@ -22,13 +21,26 @@ interface Props {
 export const Post: FC<Props> = ({
   username,
   displayName,
+  date,
   content,
   likes,
   shares,
   comments
 }) => {
-  /*const markdown =
-    '# Dies ist ein Test  \n ## Super Test  \n *hallo*  \n **HALLO**'*/
+  const originalDate = new Date(date)
+
+  const day = originalDate.getDate()
+  const month = originalDate.getMonth() + 1
+  const year = originalDate.getFullYear()
+
+  const hours = originalDate.getHours()
+  const minutes = originalDate.getMinutes()
+
+  const formattedDate = `${day < 10 ? '0' : ''}${day}.${
+    month < 10 ? '0' : ''
+  }${month}.${year} ${hours < 10 ? '0' : ''}${hours}:${
+    minutes < 10 ? '0' : ''
+  }${minutes}`
 
   return (
     <article className='p-2 pt-5 pb-4 border-b-2  border-neutral-700 dark:border-midnight-600 font-manrope'>
@@ -43,8 +55,8 @@ export const Post: FC<Props> = ({
         <div className='flex flex-col justify-center'>
           <span className='text-sm'>
             {displayName}{' '}
-            <span className='text-zinc-400 dark:text-gray-500'>
-              vor 2 Stunden
+            <span className='text-zinc-400 dark:text-gray-500 ml-1'>
+              {formattedDate}
             </span>
           </span>
           <span className='text-sm text-zinc-400 dark:text-gray-500'>

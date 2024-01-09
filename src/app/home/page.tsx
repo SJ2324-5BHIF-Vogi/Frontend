@@ -27,7 +27,6 @@ const Home = (): ReactElement => {
       }
     }
 
-    // Call the async function
     fetchData()
   }, [])
 
@@ -38,6 +37,7 @@ const Home = (): ReactElement => {
           key={post.uuid}
           comments={post.comments.toString()}
           content={post.content}
+          date={post.date}
           displayName={post.displayName}
           likes={post.likes.toString()}
           shares={post.shares.toString()}
