@@ -30,7 +30,7 @@ export const Sidebar: FC = () => {
           </Link>
         </div>
         <div>
-          <Link href='/user/vogi'>
+          <Link href='/user/github'>
             <NavbarButton Icon={RiUserLine}>Profile</NavbarButton>
           </Link>
         </div>
