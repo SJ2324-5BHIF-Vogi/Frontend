@@ -12,8 +12,8 @@ import {
 
 export const Sidebar: FC = () => {
   return (
-    <nav className='flex flex-col fixed h-screen px-1 overflow-hidden border-r-4 bg-zinc-800 border-zinc-500 border-gradient-r grow w-1/5 text-white dark:bg-midnight-700'>
-      <section className='mt-16 mb-12 mx-auto'>
+    <nav className='flex flex-col fixed h-screen px-1 overflow-hidden border-r-4 bg-zinc-800 border-zinc-500 border-gradient-r grow md:w-1/5 w-full text-white dark:bg-midnight-700'>
+      <section className='md:mt-16 mt-8 md:mb-12 mb-8 mx-auto'>
         <Link href='/home'>
           <div className='rounded-full logo h-[142px] w-[142px]' />
           <p className='text-center mt-4 text-4xl text-emerald-400 logo-text font-righteous'>
@@ -21,7 +21,7 @@ export const Sidebar: FC = () => {
           </p>
         </Link>
       </section>
-      <section className='flex-col space-y-4 mx-auto grow w-2/3 font-righteous'>
+      <section className='flex-col md:space-y-4 space-y-2 mx-auto grow w-2/3 font-righteous'>
         <div>
           <Link href='/home'>
             <NavbarButton Icon={RiHome2Line}>Home</NavbarButton>
