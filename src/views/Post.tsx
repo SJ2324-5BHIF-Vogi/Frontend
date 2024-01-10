@@ -7,6 +7,7 @@ import {
   RiMessage3Line,
   RiShareForwardLine
 } from 'react-icons/ri'
+import Link from 'next/link'
 
 interface Props {
   username: string
@@ -44,26 +45,28 @@ export const Post: FC<Props> = ({
 
   return (
     <article className='p-2 pt-5 pb-4 border-b-2  border-neutral-700 dark:border-midnight-600 font-manrope'>
-      <aside className='flex space-x-3'>
-        <Image
-          alt='[CHANGE TO USERNAME] profile picture'
-          className='rounded-full'
-          height={50}
-          src='/vogi_logo_dark.png'
-          width={50}
-        />
-        <div className='flex flex-col justify-center'>
-          <span className='text-sm'>
-            {displayName}{' '}
-            <span className='text-zinc-400 dark:text-gray-500 ml-1'>
-              {formattedDate}
+      <Link href={`/user/${username}`}>
+        <aside className='flex space-x-3'>
+          <Image
+            alt='[CHANGE TO USERNAME] profile picture'
+            className='rounded-full'
+            height={50}
+            src='/vogi_logo_dark.png'
+            width={50}
+          />
+          <div className='flex flex-col justify-center'>
+            <span className='text-sm'>
+              {displayName}{' '}
+              <span className='text-zinc-400 dark:text-gray-500 ml-1'>
+                {formattedDate}
+              </span>
             </span>
-          </span>
-          <span className='text-sm text-zinc-400 dark:text-gray-500'>
-            {username}
-          </span>
-        </div>
-      </aside>
+            <span className='text-sm text-zinc-400 dark:text-gray-500'>
+              {username}
+            </span>
+          </div>
+        </aside>
+      </Link>
       <Markdown className='my-5'>{content}</Markdown>
       <section className='flex justify-center space-x-5'>
         <InteractionButton Icon={RiHeart3Line}>{likes}</InteractionButton>
