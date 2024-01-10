@@ -15,7 +15,7 @@ const RootLayout = ({ children }: { children: ReactNode }): ReactElement => {
       <body
         className={
           inter.className +
-          ' flex h-full min-h-[100vh] dark:bg-gradient-to-b from-toothpaste-500 via-eggplant-500 to-dragonfruit-500'
+          ' flex h-full min-h-[100vh] bg-zinc-900 dark:bg-midnight-800 text-white font-manrope'
         }
       >
         {children}
