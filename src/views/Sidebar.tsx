@@ -4,6 +4,7 @@ import React, { FC } from 'react'
 import {
   RiCompassLine,
   RiHome2Line,
+  RiLoginBoxLine,
   RiSettings4Line,
   RiUserLine,
   RiVipDiamondLine
@@ -12,7 +13,7 @@ import {
 export const Sidebar: FC = () => {
   return (
     <nav className='flex flex-col fixed h-screen px-1 overflow-hidden border-r-4 bg-zinc-800 border-zinc-500 border-gradient-r grow w-1/5 text-white dark:bg-midnight-700'>
-      <section className='my-16 mx-auto'>
+      <section className='mt-16 mb-12 mx-auto'>
         <Link href='/home'>
           <div className='rounded-full logo h-[142px] w-[142px]' />
           <p className='text-center mt-4 text-4xl text-emerald-400 logo-text font-righteous'>
@@ -20,7 +21,7 @@ export const Sidebar: FC = () => {
           </p>
         </Link>
       </section>
-      <section className='flex-col space-y-4 mx-auto grow w-2/3 font-righteous mt-8'>
+      <section className='flex-col space-y-4 mx-auto grow w-2/3 font-righteous'>
         <div>
           <Link href='/home'>
             <NavbarButton Icon={RiHome2Line}>Home</NavbarButton>
@@ -44,6 +45,11 @@ export const Sidebar: FC = () => {
         <div>
           <Link href='/settings'>
             <NavbarButton Icon={RiSettings4Line}>Settings</NavbarButton>
+          </Link>
+        </div>
+        <div>
+          <Link href='/login'>
+            <NavbarButton Icon={RiLoginBoxLine}>Login</NavbarButton>
           </Link>
         </div>
       </section>
