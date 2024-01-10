@@ -69,6 +69,35 @@ const Profile: FC<Props> = ({ params }) => {
     )
   }
 
+  let content
+
+  if (posts.length === 0) {
+    content = (
+      <div className='flex items-center justify-center h-screen text-white font-manrope '>
+        <div className='text-center text-xl'>
+          There aren't any posts we can show you right now.
+        </div>
+      </div>
+    )
+  } else {
+    content = (
+      <main className='flex flex-col p-4 space-y-[5px] text-white'>
+        {posts.map((post) => (
+          <Post
+            key={post.uuid}
+            comments={post.comments.toString()}
+            content={post.content}
+            date={post.date}
+            displayName={post.displayName}
+            likes={post.likes.toString()}
+            shares={post.shares.toString()}
+            username={post.username}
+          />
+        ))}
+      </main>
+    )
+  }
+
   return (
     <>
       <Header
@@ -77,20 +106,7 @@ const Profile: FC<Props> = ({ params }) => {
         username={user.username}
       />
       <div className='flex flex-col m-[15px] space-y-[5px] text-white'>
-        <main className='flex flex-col p-4 space-y-[5px] text-white'>
-          {posts.map((post) => (
-            <Post
-              key={post.uuid}
-              comments={post.comments.toString()}
-              content={post.content}
-              date={post.date}
-              displayName={post.displayName}
-              likes={post.likes.toString()}
-              shares={post.shares.toString()}
-              username={post.username}
-            />
-          ))}
-        </main>
+        {content}
       </div>
     </>
   )

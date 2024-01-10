@@ -30,6 +30,16 @@ const Home = (): ReactElement => {
     fetchData()
   }, [])
 
+  if (posts.length === 0) {
+    return (
+      <div className='flex items-center justify-center h-screen text-white font-manrope'>
+        <div className='text-center text-xl'>
+          There aren't any posts we can show you right now.
+        </div>
+      </div>
+    )
+  }
+
   return (
     <main className='flex flex-col p-4 space-y-[5px] text-white'>
       {posts.map((post) => (
