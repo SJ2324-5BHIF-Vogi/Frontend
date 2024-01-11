@@ -44,7 +44,7 @@ export const Post: FC<Props> = ({
   }${minutes}`
 
   return (
-    <article className='p-2 pt-5 pb-4 border-b-2  border-neutral-700 dark:border-midnight-600 font-manrope'>
+    <article className='xl:px-2 pt-5 pb-4 border-b-2  border-neutral-700 dark:border-midnight-600 font-manrope'>
       <Link href={`/user/${username}`}>
         <aside className='flex space-x-3'>
           <Image

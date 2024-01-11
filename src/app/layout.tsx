@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 }
 const RootLayout = ({ children }: { children: ReactNode }): ReactElement => {
   return (
-    <html className='dark min-h-[100%] overflow-x-hidden' lang='en'>
+    <html className='min-h-[100%] overflow-x-hidden' lang='en'>
       <body
         className={
           inter.className +
