@@ -33,13 +33,13 @@ const RootLayout = ({ children }: { children: ReactNode }): ReactElement => {
     <>
       <div className='flex-col'>
         <button
-          className='2xl:hidden fixed z-50 top-4 right-4 m-1 text-white text-2xl'
+          className='2xl:hidden fixed z-50 top-4 right-4 m-1 text-white text-2xl drop-shadow-md'
           onClick={toggleSidebar}
         >
           <RiMenuLine />
         </button>
         <button
-          className='2xl:hidden fixed z-50 top-16 right-4 m-1 text-white text-2xl'
+          className='2xl:hidden fixed z-50 top-16 right-4 m-1 text-white text-2xl drop-shadow-sm'
           onClick={toggleRightAside}
         >
           <RiSearchLine />
