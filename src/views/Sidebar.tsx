@@ -2,7 +2,6 @@ import { NavbarButton } from '@/components/Sidebar/NavbarButton'
 import Link from 'next/link'
 import React, { FC } from 'react'
 import {
-  RiCompassLine,
   RiHome2Line,
   RiLoginBoxLine,
   RiSettings4Line,
@@ -12,8 +11,8 @@ import {
 
 export const Sidebar: FC = () => {
   return (
-    <nav className='flex flex-col fixed h-screen px-1 overflow-hidden border-r-4 bg-zinc-800 border-zinc-500 border-gradient-r grow md:w-1/5 w-full text-white dark:bg-midnight-700'>
-      <section className='md:mt-16 mt-8 md:mb-12 mb-8 mx-auto'>
+    <nav className='flex flex-col fixed h-screen px-1 overflow-y border-r-4 bg-zinc-800 border-zinc-500 border-gradient-r grow 2xl:w-1/5 w-full text-white dark:bg-midnight-700 max-h-screen overflow-y-auto'>
+      <section className='md:mt-16 mt-12 mx-auto 2xl:mb-0 mb-8'>
         <Link href='/home'>
           <div className='rounded-full logo h-[142px] w-[142px]' />
           <p className='text-center mt-4 text-4xl text-emerald-400 logo-text font-righteous'>
@@ -21,15 +20,10 @@ export const Sidebar: FC = () => {
           </p>
         </Link>
       </section>
-      <section className='flex-col md:space-y-4 space-y-2 mx-auto grow w-2/3 font-righteous'>
+      <section className='flex justify-center flex-col xl:space-y-6 space-y-8 mx-auto grow 2xl:w-2/3 xl:1/5 md:w-2/5 w-3/4 font-righteous mb-8'>
         <div>
           <Link href='/home'>
             <NavbarButton Icon={RiHome2Line}>Home</NavbarButton>
-          </Link>
-        </div>
-        <div>
-          <Link href='/explore'>
-            <NavbarButton Icon={RiCompassLine}>Explore</NavbarButton>
           </Link>
         </div>
         <div>
