@@ -1,13 +1,7 @@
 'use client'
 import { NavbarButton } from '@/components/Sidebar/NavbarButton'
-import React, { FC, useState } from 'react'
-import {
-  RiLock2Line,
-  RiMoonClearLine,
-  RiMoonLine,
-  RiPaintBrushLine,
-  RiUserLine
-} from 'react-icons/ri'
+import React, { FC } from 'react'
+import { RiLock2Line, RiMoonLine, RiUserLine } from 'react-icons/ri'
 
 const Settings: FC = () => {
   return (
