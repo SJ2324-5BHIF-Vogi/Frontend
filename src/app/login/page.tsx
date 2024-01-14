@@ -2,19 +2,17 @@ import React, { FC } from 'react'
 
 const Login: FC = () => {
   return (
-    <div className='flex h-screen bg-zinc-900'>
-      {/* Left half - Logo */}
-      <div className='flex-1 flex items-center justify-center'>
+    <div className='flex h-screen bg-zinc-900 justify-between'>
+      <div className='w-1/2 flex items-center justify-center'>
         <img
-          src='/vogi_logo_dark.png'
+          src='/vogi_logo_transparent.png'
           alt='Your Logo'
-          className='h-full w-full object-cover object-center'
+          className='h-full w-full object-contain'
         />
       </div>
 
-      {/* Right half - Login Form */}
-      <div className='flex-1 flex items-center justify-center'>
-        <div className='max-w-screen-md w-full bg-zinc-900 p-8 shadow-md'>
+      <div className='w-1/2 flex items-center'>
+        <div className='max-w-screen-md w-full bg-zinc-900 p-8'>
           <h2 className='text-2xl font-bold mb-8 text-white'>Login</h2>
           <div className='mb-4'>
             <label
@@ -26,7 +24,7 @@ const Login: FC = () => {
             <input
               type='email'
               id='email'
-              className='w-full p-2 border border-neon-green-500 bg-gray-300 rounded-md'
+              className='w-full p-2 border-neon-green-500 bg-gray-300 rounded-md'
               placeholder='Enter your email'
             />
           </div>
@@ -40,7 +38,7 @@ const Login: FC = () => {
             <input
               type='password'
               id='password'
-              className='w-full p-2 border border-neon-green-500 bg-gray-300 rounded-md'
+              className='w-full p-2 border-neon-green-500 bg-gray-300 rounded-md'
               placeholder='Enter your password'
             />
           </div>
